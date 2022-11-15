@@ -1,0 +1,76 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.pac-man {
+    width: 60px;
+    height: 60px;
+    background-color: #E0E246;
+    border-radius: 50%;
+    position: relative;
+    transform: rotate(-45deg);
+}
+.pac-man-mouth {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.pac-man-food {
+    margin: 0 2.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.pac-man-food > .food {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.pac-man-food > .food + .food {
+    margin-left: 1.5rem;
+}
+
+.pac-man-enemy {
+    width: 60px;
+    height: 60px;
+    background-color: #C74E4E;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: relative;
+}
+.enemy-spike {
+    width: 15px;
+    height: 15px;
+    background-color: #000000;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -7.5px;
+}
+.enemy-spike1 {
+    left: 3px;
+}
+.enemy-spike2 {
+    left: 23px;
+}
+.enemy-spike3 {
+    left: 43px;
+}
